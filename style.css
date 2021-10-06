@@ -3,7 +3,7 @@
     --white: rgb(255,255,255);
     --nav-blue: rgb(71,82,94);
     --h-blue: rgb(74,85,97);
-    --p-blue: rgb(130,145,166);
+    --p-blue: rgb(135,149,169);
     --beige: rgb(228,219,205);
 }
 
@@ -19,7 +19,7 @@ body {
 header {
     background-color: var(--gray);
     text-align: center;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
 }
@@ -47,31 +47,49 @@ header nav a{
 
 .spacer {
     width: 100%;
-    height: 180px;
+    height: 200px;
 }
 
 .main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 20px 200px;
 }
 
-.text {
-    margin: 50px;
+.main .text {
+    width: 400px;
 }
+
+.main .text p{
+    color: var(--p-blue);
+    font-size: 20px;
+}
+
 .text h2 {
     font-weight: bold;
     font-size: 28px;
 }
 
+
+.main .gallery img {
+    width: 340px;
+}
+
 footer {
     background-color: var(--gray);
+    padding-top: 10px;
     margin: 15px;
     display: flex;
     justify-content: space-around;
 }
 
+footer p {
+    font-size: 20px;
+}
+
 footer .email {
     text-align: center;
+    font-weight: bold;
 }
 
 footer .documents {
