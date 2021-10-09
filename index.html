@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -12,12 +13,12 @@
       <header>
       <h1>AHJUD & KAMINAD</h1>
       <nav>
-        <a href="/html/">Avaleht</a>
-        <a href="/css/">Ahjud</a>
-        <a href="/js/">Kaminad</a>
-        <a href="/python/">Tarvikud</a>
-        <a href="/js/">Tehtud tööd</a>
-        <a href="/python/">Hinnapäring</a>
+        <a href="index.html">Avaleht</a>
+        <a href="#top">Ahjud</a>
+        <a href="products.html">Kaminad</a>
+        <a href="#top">Tarvikud</a>
+        <a href="#top">Tehtud tööd</a>
+        <a href="price.html">Hinnapäring</a>
       </nav>
         </header>
     <div class="spacer"></div>
@@ -37,7 +38,26 @@
         </p>
       </div>
       <div class="gallery">
-          <img src="kamin1.jpeg" alt="Kamin">
+        <div class="slide">
+          <img src="kamin1.jpeg">
+        </div>
+        
+        <div class="slide">
+          <img src="kamin2.jpg">
+        </div>
+        
+        <div class="slide">
+          <img src="kamin3.jpg">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
       </div>
     </div>
     <footer>
