@@ -212,6 +212,10 @@ footer .documents {
     color: rgb(150, 150, 150);
 }
 
+.main .price-product label {
+    color: var(--p-blue);
+}
+
 textarea {
     width: 100%;
     border: 1px solid rgba(93, 93, 122, 0.616);
