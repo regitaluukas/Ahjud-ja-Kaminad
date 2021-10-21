@@ -36,5 +36,5 @@ function getProduct() {
   }
 
   price_product.getElementsByTagName('h2')[0].textContent = 'Toode ' + productid
-  price_product.getElementsByTagName('img')[0].src = 'Kamin' + productid + '.jpg'
+  price_product.getElementsByTagName('img')[0].src = 'kamin' + productid + '.jpg'
 }
